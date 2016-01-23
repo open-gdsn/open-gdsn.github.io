@@ -33,19 +33,26 @@
 
 <p>A soon to be launched attempt to create a open and free¹ implementation in java. </p>
 
-<p>Initially it will consist of </p>
-
+<p>Initially it will consist of just a <a href="open-gdsn">core project</a>, focussing om provide 'better' standards in the sence that they can be more effectively used in a technical (=executable) way
+<ul>
+  <li><li>All GDSN Global validation rules (including conditionally required fields or allowed values) in a Schematron annotated set of XSD's</li>
+</ul>
+</p>
+<p>Later on, it could be that this 'better standard' will be incorporated in a semi-end-user oriented framework with a api's to communicate with existing systems like
 <ul>
 <li>DataSource client (non-ui) for communicating with a certified SourceDataPool that supports the GDSN flow of messages</li>
-<li>DataSource UI extending the DataSource client</li>
 <li>DataRecipient client (non-ui) for communicating with a certified RecipientDataPool that supports the GDSN flow of messages</li>
-<li>DataRecipient UI extending the DataRecipient client</li>
 </ul>
+or maybe even fully end-user oriented products
+<ul>
+<li>DataRecipient UI extending the DataRecipient client</li>
+<li>DataSource UI extending the DataSource client</li>
+</ul>
+</p>
 
-<p>Both clients will be based on a the same code and will initially support:</p>
+<p>Both clients should then of course be based on a the same code and should support:</p>
 
 <ul>
-<li>All GDSN Global validation rules (including conditionally required fields or allowed values)</li>
 <li>A view for all GDSN fields</li>
 <li>Sending (DataSource) or receiving (DataRecipient) CIN messages</li>
 <li>Sending (DataSource) CIP messages</li>
